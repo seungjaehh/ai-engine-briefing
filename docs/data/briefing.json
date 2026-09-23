@@ -5,7 +5,7 @@
   "stage": "통합 설계안 작성 · 구현 대기",
   "summary": "조사와 설계안을 모아 통합 아키텍처를 작성했습니다. 엔진 구현 파일은 아직 확인되지 않았습니다.",
   "stats": {
-    "researchDocuments": 11,
+    "researchDocuments": 12,
     "implementationFiles": 0,
     "testFiles": 0
   },
@@ -152,6 +152,13 @@
   ],
   "activity": [
     {
+      "id": "ff77d2930f59ab05",
+      "at": "2026-09-23T17:52:50.540Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "509758b9d46b9c67",
       "at": "2026-09-23T14:15:03.635Z",
       "type": "baseline",
@@ -165,13 +172,13 @@
     "description": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-09-23T13:20:28.568Z",
+  "sourceChangedAt": "2026-09-23T17:51:16.363Z",
   "collection": {
     "intervalMinutes": 30,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-23T14:15:03.635Z",
-  "changedAt": "2026-09-23T14:15:03.635Z"
+  "observedAt": "2026-09-23T17:52:50.540Z",
+  "changedAt": "2026-09-23T17:52:50.540Z"
 }

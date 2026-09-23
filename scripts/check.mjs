@@ -1,0 +1,13 @@
+import { promises as fs } from 'node:fs';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { ROOT, readJson, assertPublic, validateProgress } from './collect.mjs';
+const progress=await readJson(path.join(ROOT,'content/progress.json'));
+validateProgress(progress);
+const data=await readJson(path.join(ROOT,'docs/data/briefing.json'));
+assertPublic(data);validateProgress({...data,updates:[]});
+if(data.schemaVersion!==1 || !Number.isFinite(Date.parse(data.observedAt)))throw new Error('브리핑 형식이 잘못됐습니다.');
+for(const folder of ['scripts','docs/assets'])for(const file of await fs.readdir(path.join(ROOT,folder)))if(/\.(mjs|js)$/.test(file))execFileSync(process.execPath,['--check',path.join(ROOT,folder,file)]);
+const html=await fs.readFile(path.join(ROOT,'docs/index.html'),'utf8');
+for(const [,file] of html.matchAll(/(?:src|href)="(assets\/[^"]+)"/g))await fs.access(path.join(ROOT,'docs',file));
+console.log('공개 데이터, 단계 근거, 스크립트 구문, 페이지 파일 연결 확인 완료');

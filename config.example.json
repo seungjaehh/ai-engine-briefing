@@ -1,0 +1,6 @@
+{
+  "sourcePath": "../AI",
+  "repository": "YOUR_ACCOUNT/ai-engine-briefing",
+  "intervalMinutes": 30,
+  "heartbeatHours": 6
+}

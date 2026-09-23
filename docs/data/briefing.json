@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "project": "AI Core Engine",
+  "intro": "통합 설계안을 바탕으로 엔진을 만드는 과정을 기록합니다.",
+  "stage": "통합 설계안 작성 · 구현 대기",
+  "summary": "조사와 설계안을 모아 통합 아키텍처를 작성했습니다. 엔진 구현 파일은 아직 확인되지 않았습니다.",
+  "stats": {
+    "researchDocuments": 11,
+    "implementationFiles": 0,
+    "testFiles": 0
+  },
+  "git": {
+    "available": false
+  },
+  "documents": [
+    {
+      "id": "00-evidence-brief",
+      "label": "조사 종합",
+      "modifiedAt": "2026-09-23T12:54:27.067Z",
+      "kind": "research"
+    },
+    {
+      "id": "01-relay-forensics",
+      "label": "기존 자동화 분석",
+      "modifiedAt": "2026-09-23T12:54:27.063Z",
+      "kind": "research"
+    },
+    {
+      "id": "02-platform-audit",
+      "label": "플랫폼 구조 검토",
+      "modifiedAt": "2026-09-23T12:54:27.063Z",
+      "kind": "research"
+    },
+    {
+      "id": "03-runtime-capabilities",
+      "label": "실행 환경 조사",
+      "modifiedAt": "2026-09-23T12:54:27.064Z",
+      "kind": "research"
+    },
+    {
+      "id": "04-roblox-verification",
+      "label": "프로젝트 검증 조사",
+      "modifiedAt": "2026-09-23T12:54:27.065Z",
+      "kind": "research"
+    },
+    {
+      "id": "05-agent-reliability-research",
+      "label": "에이전트 신뢰성 조사",
+      "modifiedAt": "2026-09-23T12:54:27.065Z",
+      "kind": "research"
+    },
+    {
+      "id": "10-design-minimal-harness-native",
+      "label": "최소 엔진 설계안",
+      "modifiedAt": "2026-09-23T12:54:27.068Z",
+      "kind": "design"
+    },
+    {
+      "id": "10-design-ops-and-risk",
+      "label": "운영과 위험 설계안",
+      "modifiedAt": "2026-09-23T13:07:56.732Z",
+      "kind": "design"
+    },
+    {
+      "id": "10-design-oracle-first",
+      "label": "검증 중심 설계안",
+      "modifiedAt": "2026-09-23T12:54:27.069Z",
+      "kind": "design"
+    },
+    {
+      "id": "10-design-product-outcome",
+      "label": "제품 결과 중심 설계안",
+      "modifiedAt": "2026-09-23T12:54:27.075Z",
+      "kind": "design"
+    },
+    {
+      "id": "11-merged-architecture",
+      "label": "통합 아키텍처 설계안",
+      "modifiedAt": "2026-09-23T13:20:28.568Z",
+      "kind": "merged"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "policy",
+      "title": "실행 환경과 권한",
+      "description": "실행 범위, 권한 규칙, 한글 입력을 확인합니다.",
+      "status": "pending",
+      "evidence": [],
+      "note": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
+    },
+    {
+      "id": "ledger",
+      "title": "작업 기록과 상태",
+      "description": "작업 기록, 실행 잠금, 중단 기능을 만듭니다.",
+      "status": "pending",
+      "evidence": [],
+      "note": ""
+    },
+    {
+      "id": "adapters",
+      "title": "에이전트 연결",
+      "description": "실행 도구의 응답, 한도, 오류를 같은 형식으로 읽습니다.",
+      "status": "pending",
+      "evidence": [],
+      "note": ""
+    },
+    {
+      "id": "gate",
+      "title": "결과 검증과 반영",
+      "description": "검증을 통과한 변경만 반영하고 실패하면 복구합니다.",
+      "status": "pending",
+      "evidence": [],
+      "note": ""
+    },
+    {
+      "id": "loop",
+      "title": "자동 실행과 중단",
+      "description": "실행할 일, 예산, 대기와 사람의 결정을 관리합니다.",
+      "status": "pending",
+      "evidence": [],
+      "note": ""
+    },
+    {
+      "id": "contract",
+      "title": "목표와 완료 기준",
+      "description": "목표를 실행 가능한 작업과 확인할 기준으로 고정합니다.",
+      "status": "pending",
+      "evidence": [],
+      "note": ""
+    },
+    {
+      "id": "validation",
+      "title": "통합 검증과 14일 관찰",
+      "description": "실패 사례를 재현하고 실제 실행의 안정성을 확인합니다.",
+      "status": "pending",
+      "evidence": [],
+      "note": "검증 결과가 등록돼야 완료로 표시합니다."
+    }
+  ],
+  "decisions": [
+    {
+      "title": "단일 주 에이전트와 작은 제어 엔진",
+      "detail": "통합 설계안의 제안입니다. 작업 실행과 완료 판정의 책임을 구분합니다.",
+      "status": "설계안"
+    },
+    {
+      "title": "7개 구현 단계와 14일 안정성 관찰",
+      "detail": "기존 Phase 0–7 로드맵을 대체하는 구현 순서가 제안돼 있습니다.",
+      "status": "설계안"
+    }
+  ],
+  "activity": [
+    {
+      "id": "509758b9d46b9c67",
+      "at": "2026-09-23T14:15:03.635Z",
+      "type": "baseline",
+      "title": "첫 브리핑 작성",
+      "detail": "조사·설계 문서 11개와 구현 파일 0개를 확인했습니다."
+    }
+  ],
+  "next": {
+    "id": "policy",
+    "title": "실행 환경과 권한",
+    "description": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
+  },
+  "blocked": [],
+  "sourceChangedAt": "2026-09-23T13:20:28.568Z",
+  "collection": {
+    "intervalMinutes": 30,
+    "heartbeatHours": 6,
+    "sourceAvailable": true
+  },
+  "repository": "seungjaehh/ai-engine-briefing",
+  "observedAt": "2026-09-23T14:15:03.635Z",
+  "changedAt": "2026-09-23T14:15:03.635Z"
+}

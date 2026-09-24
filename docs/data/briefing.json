@@ -6,7 +6,7 @@
   "summary": "엔진 코드가 확인됐습니다. 단계별 완료 여부는 등록된 근거를 기준으로 표시합니다.",
   "stats": {
     "researchDocuments": 16,
-    "implementationFiles": 40,
+    "implementationFiles": 41,
     "testFiles": 19
   },
   "git": {
@@ -152,6 +152,13 @@
   ],
   "activity": [
     {
+      "id": "7a2d336d050838bb",
+      "at": "2026-09-24T13:22:49.832Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 6개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "4026dbb82a3aa0d9",
       "at": "2026-09-24T12:52:49.890Z",
       "type": "source",
@@ -228,13 +235,13 @@
     "description": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-09-24T12:51:06.309Z",
+  "sourceChangedAt": "2026-09-24T13:20:16.843Z",
   "collection": {
     "intervalMinutes": 30,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-24T12:52:49.890Z",
-  "changedAt": "2026-09-24T12:52:49.890Z"
+  "observedAt": "2026-09-24T13:22:49.832Z",
+  "changedAt": "2026-09-24T13:22:49.832Z"
 }

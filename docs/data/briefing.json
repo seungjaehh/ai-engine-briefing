@@ -55,7 +55,7 @@
       "added": 0,
       "deleted": 0,
       "untracked": 0,
-      "ahead": 13,
+      "ahead": 1,
       "behind": 0
     },
     {
@@ -244,6 +244,13 @@
   ],
   "activity": [
     {
+      "id": "6d2bcc9e30cd4c11",
+      "at": "2026-09-25T04:33:38.767Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 확인 불가, VOID Cards Engine 16개 변경 · 미푸시 0, VOID Cards Website 0개 변경 · 미푸시 1, Codex 0개 변경 · 미푸시 0, Claude Code 0개 변경 · 미푸시 0, Claude CLI 0개 변경 · 미푸시 0"
+    },
+    {
       "id": "344a9e4e37b5d37b",
       "at": "2026-09-25T03:03:38.697Z",
       "type": "workspace",
@@ -376,6 +383,6 @@
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T03:03:38.697Z",
-  "changedAt": "2026-09-25T03:03:38.697Z"
+  "observedAt": "2026-09-25T04:33:38.767Z",
+  "changedAt": "2026-09-25T04:33:38.767Z"
 }

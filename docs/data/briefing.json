@@ -33,14 +33,14 @@
       "label": "VOID Cards Engine",
       "available": true,
       "branch": "main",
-      "changedFiles": 0,
+      "changedFiles": 10,
       "staged": 0,
-      "unstaged": 0,
-      "modified": 0,
+      "unstaged": 5,
+      "modified": 5,
       "added": 0,
       "deleted": 0,
-      "untracked": 0,
-      "ahead": 1,
+      "untracked": 5,
+      "ahead": 0,
       "behind": 0
     },
     {
@@ -244,6 +244,13 @@
   ],
   "activity": [
     {
+      "id": "1bb860efb7fbb0e6",
+      "at": "2026-09-25T02:33:39.318Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 확인 불가, VOID Cards Engine 10개 변경 · 미푸시 0, VOID Cards Website 0개 변경 · 미푸시 13, Codex 0개 변경 · 미푸시 0, Claude Code 0개 변경 · 미푸시 0, Claude CLI 0개 변경 · 미푸시 0"
+    },
+    {
       "id": "c8c1e61ffe12cafd",
       "at": "2026-09-25T02:03:37.656Z",
       "type": "source",
@@ -355,6 +362,6 @@
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T02:03:37.656Z",
-  "changedAt": "2026-09-25T02:03:37.656Z"
+  "observedAt": "2026-09-25T02:33:39.318Z",
+  "changedAt": "2026-09-25T02:33:39.318Z"
 }

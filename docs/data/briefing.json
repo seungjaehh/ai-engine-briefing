@@ -229,6 +229,13 @@
   ],
   "activity": [
     {
+      "id": "2f5b1bd073d2dc29",
+      "at": "2026-09-25T05:57:24.805Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 4개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "e377d2e7e4b7d595",
       "at": "2026-09-25T05:27:22.419Z",
       "type": "source",
@@ -375,13 +382,13 @@
     "description": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-09-25T05:27:20.098Z",
+  "sourceChangedAt": "2026-09-25T05:47:41.656Z",
   "collection": {
     "intervalMinutes": 30,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T05:27:22.419Z",
-  "changedAt": "2026-09-25T05:27:22.419Z"
+  "observedAt": "2026-09-25T05:57:24.805Z",
+  "changedAt": "2026-09-25T05:57:24.805Z"
 }

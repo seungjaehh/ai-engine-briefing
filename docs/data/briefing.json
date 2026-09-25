@@ -44,25 +44,10 @@
       "behind": 0
     },
     {
-      "id": "void-cards-site",
-      "label": "VOID Cards Website",
-      "available": true,
-      "branch": "main",
-      "changedFiles": 0,
-      "staged": 0,
-      "unstaged": 0,
-      "modified": 0,
-      "added": 0,
-      "deleted": 0,
-      "untracked": 0,
-      "ahead": 1,
-      "behind": 0
-    },
-    {
       "id": "void-cards-codex",
       "label": "Codex",
       "available": true,
-      "branch": "agent/codex",
+      "branch": "(detached)",
       "changedFiles": 0,
       "staged": 0,
       "unstaged": 0,
@@ -70,14 +55,14 @@
       "added": 0,
       "deleted": 0,
       "untracked": 0,
-      "ahead": 0,
-      "behind": 0
+      "ahead": null,
+      "behind": null
     },
     {
       "id": "void-cards-claude-code",
       "label": "Claude Code",
       "available": true,
-      "branch": "agent/claude-code",
+      "branch": "(detached)",
       "changedFiles": 0,
       "staged": 0,
       "unstaged": 0,
@@ -85,14 +70,14 @@
       "added": 0,
       "deleted": 0,
       "untracked": 0,
-      "ahead": 0,
-      "behind": 0
+      "ahead": null,
+      "behind": null
     },
     {
       "id": "void-cards-claude-cli",
       "label": "Claude CLI",
       "available": true,
-      "branch": "agent/claude-cli",
+      "branch": "(detached)",
       "changedFiles": 0,
       "staged": 0,
       "unstaged": 0,
@@ -100,75 +85,75 @@
       "added": 0,
       "deleted": 0,
       "untracked": 0,
-      "ahead": 0,
-      "behind": 0
+      "ahead": null,
+      "behind": null
     }
   ],
   "documents": [
     {
       "id": "00-evidence-brief",
       "label": "조사 종합",
-      "modifiedAt": "2026-09-23T12:54:27.067Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "research"
     },
     {
       "id": "01-relay-forensics",
       "label": "기존 자동화 분석",
-      "modifiedAt": "2026-09-23T12:54:27.063Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "research"
     },
     {
       "id": "02-platform-audit",
       "label": "플랫폼 구조 검토",
-      "modifiedAt": "2026-09-23T12:54:27.063Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "research"
     },
     {
       "id": "03-runtime-capabilities",
       "label": "실행 환경 조사",
-      "modifiedAt": "2026-09-23T12:54:27.064Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "research"
     },
     {
       "id": "04-roblox-verification",
       "label": "프로젝트 검증 조사",
-      "modifiedAt": "2026-09-23T12:54:27.065Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "research"
     },
     {
       "id": "05-agent-reliability-research",
       "label": "에이전트 신뢰성 조사",
-      "modifiedAt": "2026-09-23T12:54:27.065Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "research"
     },
     {
       "id": "10-design-minimal-harness-native",
       "label": "최소 엔진 설계안",
-      "modifiedAt": "2026-09-23T12:54:27.068Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "design"
     },
     {
       "id": "10-design-ops-and-risk",
       "label": "운영과 위험 설계안",
-      "modifiedAt": "2026-09-23T13:07:56.732Z",
+      "modifiedAt": "2026-09-23T13:07:56.000Z",
       "kind": "design"
     },
     {
       "id": "10-design-oracle-first",
       "label": "검증 중심 설계안",
-      "modifiedAt": "2026-09-23T12:54:27.069Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "design"
     },
     {
       "id": "10-design-product-outcome",
       "label": "제품 결과 중심 설계안",
-      "modifiedAt": "2026-09-23T12:54:27.075Z",
+      "modifiedAt": "2026-09-23T12:54:27.000Z",
       "kind": "design"
     },
     {
       "id": "11-merged-architecture",
       "label": "통합 아키텍처 설계안",
-      "modifiedAt": "2026-09-23T13:20:28.568Z",
+      "modifiedAt": "2026-09-23T13:20:28.000Z",
       "kind": "merged"
     }
   ],
@@ -243,6 +228,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "e377d2e7e4b7d595",
+      "at": "2026-09-25T05:27:22.419Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
+      "id": "d5da442edf9afe91",
+      "at": "2026-09-25T05:26:11.401Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 확인 불가, VOID Cards Engine 16개 변경 · 미푸시 0, Codex 0개 변경 · 미푸시 확인 불가, Claude Code 0개 변경 · 미푸시 확인 불가, Claude CLI 0개 변경 · 미푸시 확인 불가"
+    },
     {
       "id": "6d2bcc9e30cd4c11",
       "at": "2026-09-25T04:33:38.767Z",
@@ -376,13 +375,13 @@
     "description": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-09-25T02:40:58.853Z",
+  "sourceChangedAt": "2026-09-25T05:27:20.098Z",
   "collection": {
     "intervalMinutes": 30,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T04:33:38.767Z",
-  "changedAt": "2026-09-25T04:33:38.767Z"
+  "observedAt": "2026-09-25T05:27:22.419Z",
+  "changedAt": "2026-09-25T05:27:22.419Z"
 }

@@ -15,7 +15,7 @@ const catalog = [
   ['10-design-oracle-first.md', '검증 중심 설계안'], ['10-design-product-outcome.md', '제품 결과 중심 설계안'],
   ['11-merged-architecture.md', '통합 아키텍처 설계안']
 ];
-const ignored = new Set(['.git', '.local', '.env', 'node_modules', 'scratch', 'dist', 'build', 'coverage', '.venv', 'vendor', '.cache']);
+const ignored = new Set(['.git', '.local', '.env', 'node_modules', 'scratch', 'dist', 'build', 'coverage', '.venv', 'vendor', '.cache', 'projects']);
 const codeExt = new Set(['.js', '.mjs', '.cjs', '.ts', '.tsx', '.jsx', '.py', '.ps1', '.go', '.rs', '.cs', '.lua', '.luau']);
 
 export async function readJson(file, fallback) {
@@ -79,6 +79,46 @@ function gitFacts(source) {
     return { available: true, commits: Number(run(['rev-list', '--count', 'HEAD'])), head: head.slice(0, 12), committedAt: run(['show', '-s', '--format=%cI', 'HEAD']), hasUncommittedChanges: Boolean(status) };
   } catch { return { available: false }; }
 }
+function workspaceFacts(workspace, root) {
+  const label = String(workspace.label || '').trim();
+  const id = String(workspace.id || '').trim();
+  if (!/^[a-z0-9-]{1,40}$/.test(id) || !label || label.length > 60 || typeof workspace.path !== 'string' || !workspace.path.trim()) {
+    throw new Error('로컬 설정의 workspaceRepos 항목을 확인하세요.');
+  }
+  const repoPath = path.resolve(root, workspace.path);
+  const execute = args => execFileSync('git', ['--no-optional-locks', '-C', repoPath, ...args], { encoding: 'utf8', timeout: 15000, windowsHide: true, stdio: ['ignore', 'pipe', 'ignore'] });
+  const run = args => execute(args).trim();
+  try {
+    const top = path.resolve(run(['rev-parse', '--show-toplevel']));
+    if (top.toLowerCase() !== path.resolve(repoPath).toLowerCase()) return { id, label, available: false };
+    const branch = run(['branch', '--show-current']) || '(detached)';
+    const status = execute(['status', '--porcelain=v1', '--untracked-files=all']).trimEnd();
+    const rows = status ? status.split(/\r?\n/).filter(Boolean) : [];
+    const counts = { staged: 0, unstaged: 0, modified: 0, added: 0, deleted: 0, untracked: 0 };
+    for (const row of rows) {
+      const x = row[0], y = row[1];
+      if (x !== ' ' && x !== '?') counts.staged++;
+      if (y !== ' ' && y !== '?') counts.unstaged++;
+      if (x === '?' && y === '?') counts.untracked++;
+      else if (x === 'A' || y === 'A') counts.added++;
+      else if (x === 'D' || y === 'D') counts.deleted++;
+      else if (x === 'M' || y === 'M' || x === 'T' || y === 'T' || x === 'U' || y === 'U') counts.modified++;
+    }
+    let ahead = null, behind = null;
+    try {
+      const [a, b] = run(['rev-list', '--left-right', '--count', 'HEAD...@{upstream}']).split(/\s+/).map(Number);
+      if (Number.isFinite(a) && Number.isFinite(b)) { ahead = a; behind = b; }
+    } catch {
+      if (branch !== 'main' && branch !== '(detached)') {
+        try {
+          const [baseOnly, branchOnly] = run(['rev-list', '--left-right', '--count', 'main...HEAD']).split(/\s+/).map(Number);
+          if (Number.isFinite(baseOnly) && Number.isFinite(branchOnly)) { ahead = branchOnly; behind = baseOnly; }
+        } catch {}
+      }
+    }
+    return { id, label, available: true, branch, changedFiles: rows.length, ...counts, ahead, behind };
+  } catch { return { id, label, available: false }; }
+}
 export async function collect(root = ROOT, now = new Date()) {
   const config = await readJson(path.join(root, '.local/config.json'));
   const source = await fs.realpath(path.resolve(root, config.sourcePath));
@@ -98,6 +138,15 @@ export async function collect(root = ROOT, now = new Date()) {
   });
   const stats = { researchDocuments: files.filter(f => f.kind === 'research' && f.rel.endsWith('.md')).length, implementationFiles: files.filter(f => f.kind === 'code').length, testFiles: files.filter(f => f.kind === 'test').length };
   const git = gitFacts(source);
+  const configuredWorkspaces = config.workspaceRepos || [];
+  if (!Array.isArray(configuredWorkspaces) || configuredWorkspaces.length > 20) throw new Error('workspaceRepos는 최대 20개 저장소 목록이어야 합니다.');
+  const workspaceIds = new Set();
+  const workspaces = configuredWorkspaces.map(item => {
+    const result = workspaceFacts(item, root);
+    if (workspaceIds.has(result.id)) throw new Error('workspaceRepos ID가 중복됐습니다.');
+    workspaceIds.add(result.id);
+    return result;
+  });
   const done = progress.milestones.filter(m => m.status === 'done').length;
   const active = progress.milestones.find(m => m.status === 'active');
   const blocked = progress.milestones.filter(m => m.status === 'blocked');
@@ -116,10 +165,14 @@ export async function collect(root = ROOT, now = new Date()) {
     activity.unshift({ id: sha(eventTime + detail).slice(0,16), at: eventTime, type: 'source', title: '엔진 작업 자료 변경', detail });
   }
   if (prior?.git?.head && git.head && prior.git.head !== git.head) activity.unshift({ id: sha(eventTime + git.head).slice(0,16), at: eventTime, type: 'commit', title: '엔진 커밋 변경', detail: `현재 커밋 ${git.head}. 완료 단계와는 별도로 기록합니다.` });
+  if (prior && JSON.stringify(prior.workspaces || []) !== JSON.stringify(workspaces)) {
+    const detail = workspaces.map(w => w.available ? `${w.label} ${w.changedFiles}개 변경 · 미푸시 ${w.ahead ?? '확인 불가'}` : `${w.label} 저장소 확인 불가`).join(', ');
+    activity.unshift({ id: sha(eventTime + detail).slice(0,16), at: eventTime, type: 'workspace', title: '코드 작업 폴더 상태 변경', detail: detail || '등록된 코드 작업 폴더가 없습니다.' });
+  }
   const existing = new Set(activity.map(x => x.id));
   for (const update of progress.updates) if (!existing.has(update.id)) activity.push(update);
   activity = activity.sort((a,b) => b.at.localeCompare(a.at)).slice(0,80);
-  const content = { schemaVersion: 1, project: progress.project, intro: progress.intro, stage, summary, stats, git, documents, milestones: progress.milestones, decisions: progress.decisions, activity, next: next ? { id: next.id, title: next.title, description: next.note || next.description } : null, blocked: blocked.map(m => ({ title:m.title, note:m.note })), sourceChangedAt: files.map(f => f.modifiedAt).sort().at(-1) || null, collection: { intervalMinutes: config.intervalMinutes || 30, heartbeatHours: config.heartbeatHours || 6, sourceAvailable: true }, repository: config.repository };
+  const content = { schemaVersion: 1, project: progress.project, intro: progress.intro, stage, summary, stats, git, workspaces, documents, milestones: progress.milestones, decisions: progress.decisions, activity, next: next ? { id: next.id, title: next.title, description: next.note || next.description } : null, blocked: blocked.map(m => ({ title:m.title, note:m.note })), sourceChangedAt: files.map(f => f.modifiedAt).sort().at(-1) || null, collection: { intervalMinutes: config.intervalMinutes || 30, heartbeatHours: config.heartbeatHours || 6, sourceAvailable: true }, repository: config.repository };
   const fingerprint = sha(JSON.stringify(content));
   const heartbeatDue = !prior || now - new Date(prior.observedAt) >= (config.heartbeatHours || 6) * 3600000;
   const contentChanged = fingerprint !== previous.fingerprint;

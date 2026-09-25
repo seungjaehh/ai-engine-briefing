@@ -9,6 +9,28 @@ function renderActivity() {
   $('more').hidden=visible>=data.activity.length;
   text('activity-count',`${data.activity.length}개 기록`);
 }
+function renderWorkspaces() {
+  const items=data.workspaces||[];
+  text('workspace-count',`${items.length}개 저장소`);
+  $('workspaces').replaceChildren(...items.map(item=>{
+    const card=el('article','workspace-card');
+    const heading=el('div','workspace-heading');
+    heading.append(el('h3','',item.label),el('span',`workspace-state ${item.available?(item.changedFiles?'changed':'clean'):'unavailable'}`,!item.available?'연결 안 됨':item.changedFiles?'수정 중':'깨끗함'));
+    card.append(heading);
+    if(item.available){
+      card.append(el('p','workspace-branch',item.branch));
+      const stats=el('div','workspace-stats');
+      stats.append(el('span','',`변경 파일 ${item.changedFiles}개`),el('span','',`추가 ${item.added} · 수정 ${item.modified} · 삭제 ${item.deleted} · 미추적 ${item.untracked}`),el('span','',`스테이징 ${item.staged} · 미스테이징 ${item.unstaged}`));
+      const remote=[];
+      if(item.ahead!==null)remote.push(`미푸시 ${item.ahead}`);
+      if(item.behind!==null)remote.push(`미반영 ${item.behind}`);
+      if(remote.length)stats.append(el('span','',remote.join(' · ')));
+      card.append(stats);
+    } else card.append(el('p','workspace-branch','로컬 저장소를 읽지 못했습니다.'));
+    return card;
+  }));
+  if(!items.length)$('workspaces').append(el('p','empty-state','추적할 코드 저장소가 등록되지 않았습니다.'));
+}
 function render(next) {
   data=next;
   const done=data.milestones.filter(m=>m.status==='done').length;
@@ -26,6 +48,7 @@ function render(next) {
   $('documents').replaceChildren(...[...data.documents].reverse().map(item=>{const row=el('div',`doc ${item.kind}`);const time=el('time','',date(item.modifiedAt,true));time.dateTime=item.modifiedAt;row.append(el('span','',item.label),time);return row;}));
   if(!data.documents.length)$('documents').append(el('p','empty-state','등록된 설계 자료가 없습니다.'));
   text('sync-label',`최근 수집 ${date(data.observedAt)} KST`);
+  renderWorkspaces();
   text('schedule-note',`PC 실행 중 ${data.collection.intervalMinutes}분마다 확인\n변경 시 게시 · 수집 상태는 최대 ${data.collection.heartbeatHours}시간마다 반영`);$('schedule-note').style.whiteSpace='pre-line';
   if(/^[\w.-]+\/[\w.-]+$/.test(data.repository))$('repo-link').href=`https://github.com/${data.repository}`;
   const age=(Date.now()-new Date(data.observedAt))/3600000;

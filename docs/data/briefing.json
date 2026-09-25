@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "project": "AI Core Engine",
   "intro": "통합 설계안을 바탕으로 엔진을 만드는 과정을 기록합니다.",
-  "stage": "구현 파일 확인 · 완료 검증 대기",
-  "summary": "엔진 코드가 확인됐습니다. 단계별 완료 여부는 등록된 근거를 기준으로 표시합니다.",
+  "stage": "통합 검증과 14일 관찰",
+  "summary": "통합 검증과 14일 관찰 단계를 진행 중입니다. 7일 이상 무인 운영 관찰(soak)을 시작했습니다. 불가능한 과제(허니팟)와 숨긴 테스트로 부정행위를 확인합니다.",
   "stats": {
     "researchDocuments": 16,
-    "implementationFiles": 42,
-    "testFiles": 22
+    "implementationFiles": 44,
+    "testFiles": 25
   },
   "git": {
     "available": false
@@ -40,7 +40,7 @@
       "added": 0,
       "deleted": 0,
       "untracked": 0,
-      "ahead": 1,
+      "ahead": 0,
       "behind": 0
     },
     {
@@ -162,57 +162,75 @@
       "id": "policy",
       "title": "실행 환경과 권한",
       "description": "실행 범위, 권한 규칙, 한글 입력을 확인합니다.",
-      "status": "pending",
-      "evidence": [],
-      "note": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
+      "status": "done",
+      "evidence": [
+        "정책 카나리 통과(09-25), 어댑터·정책 테스트 통과, 릴리스 a1765be"
+      ],
+      "note": "실행 권한 규칙과 한글 입출력을 확인했습니다. 별도 격리 계정 대신 변조 감지 모드로 운영합니다.",
+      "completedAt": "2026-09-25T06:43:07.337Z"
     },
     {
       "id": "ledger",
       "title": "작업 기록과 상태",
       "description": "작업 기록, 실행 잠금, 중단 기능을 만듭니다.",
-      "status": "pending",
-      "evidence": [],
-      "note": ""
+      "status": "done",
+      "evidence": [
+        "원장 무결성 검증 ok, 잠금·원장·리플레이 테스트 통과(전체 182/182)"
+      ],
+      "note": "추가 전용 작업 기록, 실행 잠금, STOP 래치를 만들었습니다.",
+      "completedAt": "2026-09-25T06:43:11.964Z"
     },
     {
       "id": "adapters",
       "title": "에이전트 연결",
       "description": "실행 도구의 응답, 한도, 오류를 같은 형식으로 읽습니다.",
-      "status": "pending",
-      "evidence": [],
-      "note": ""
+      "status": "done",
+      "evidence": [
+        "실제 실행 21회 종료 분류 100%, 실행 도구 버전 변화 1회 기록"
+      ],
+      "note": "Claude Code와 Codex 두 실행 도구를 같은 형식으로 읽습니다. 한도·인증·충돌을 종료 코드와 구조화 필드로만 분류합니다.",
+      "completedAt": "2026-09-25T06:43:15.868Z"
     },
     {
       "id": "gate",
       "title": "결과 검증과 반영",
       "description": "검증을 통과한 변경만 반영하고 실패하면 복구합니다.",
-      "status": "pending",
-      "evidence": [],
-      "note": ""
+      "status": "done",
+      "evidence": [
+        "게이트 판정 27회, 승격 12회, 변조 감지 격리 1회(원인 수정), 알려진 오탐 승격 0"
+      ],
+      "note": "검증을 통과한 변경만 반영하고, 변조 흔적이 있으면 격리합니다.",
+      "completedAt": "2026-09-25T06:43:19.781Z"
     },
     {
       "id": "loop",
       "title": "자동 실행과 중단",
       "description": "실행할 일, 예산, 대기와 사람의 결정을 관리합니다.",
-      "status": "pending",
-      "evidence": [],
-      "note": ""
+      "status": "done",
+      "evidence": [
+        "15분 예약 실행 가동, 할 일 없을 때 모델 호출 0, 결정 위임 기록 분리"
+      ],
+      "note": "예약 실행, 할 일 선택, 사용량 상한, 사람 결정 대기열, 야간 대리 감독을 운영합니다.",
+      "completedAt": "2026-09-25T06:43:23.936Z"
     },
     {
       "id": "contract",
       "title": "목표와 완료 기준",
       "description": "목표를 실행 가능한 작업과 확인할 기준으로 고정합니다.",
-      "status": "pending",
-      "evidence": [],
-      "note": ""
+      "status": "done",
+      "evidence": [
+        "실제 목표 4개 완료(항목 12/12), 동결 중앙값 2분"
+      ],
+      "note": "목표를 작업 항목과 판정 테스트로 고정하고, 고정 후에는 추가만 허용합니다.",
+      "completedAt": "2026-09-25T06:43:28.051Z"
     },
     {
       "id": "validation",
       "title": "통합 검증과 14일 관찰",
       "description": "실패 사례를 재현하고 실제 실행의 안정성을 확인합니다.",
-      "status": "pending",
+      "status": "active",
       "evidence": [],
-      "note": "검증 결과가 등록돼야 완료로 표시합니다."
+      "note": "7일 이상 무인 운영 관찰(soak)을 시작했습니다. 불가능한 과제(허니팟)와 숨긴 테스트로 부정행위를 확인합니다."
     }
   ],
   "decisions": [
@@ -228,6 +246,90 @@
     }
   ],
   "activity": [
+    {
+      "id": "3c51cf12-ac04-47f4-a5d4-904514eac8eb",
+      "at": "2026-09-25T06:43:33.440Z",
+      "type": "milestone",
+      "title": "통합 검증과 14일 관찰 · 진행 중",
+      "detail": "7일 이상 무인 운영 관찰(soak)을 시작했습니다. 불가능한 과제(허니팟)와 숨긴 테스트로 부정행위를 확인합니다."
+    },
+    {
+      "id": "0dbf4d1f2d1c5430",
+      "at": "2026-09-25T06:43:28.057Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 4개 변경, 15개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
+      "id": "470b21b3-9099-4fd7-a5de-fac99bcc0ffc",
+      "at": "2026-09-25T06:43:28.051Z",
+      "type": "milestone",
+      "title": "목표와 완료 기준 · 완료",
+      "detail": "목표를 작업 항목과 판정 테스트로 고정하고, 고정 후에는 추가만 허용합니다."
+    },
+    {
+      "id": "bf8adc9bdc1ebbea",
+      "at": "2026-09-25T06:43:23.941Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 7개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
+      "id": "57c8fd7e-cec2-4229-a323-36156d30bdd3",
+      "at": "2026-09-25T06:43:23.937Z",
+      "type": "milestone",
+      "title": "자동 실행과 중단 · 완료",
+      "detail": "예약 실행, 할 일 선택, 사용량 상한, 사람 결정 대기열, 야간 대리 감독을 운영합니다."
+    },
+    {
+      "id": "17060ca2952e3e87",
+      "at": "2026-09-25T06:43:19.789Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 4개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
+      "id": "de76f29d-d05f-4df0-a846-cade9f51e53f",
+      "at": "2026-09-25T06:43:19.781Z",
+      "type": "milestone",
+      "title": "결과 검증과 반영 · 완료",
+      "detail": "검증을 통과한 변경만 반영하고, 변조 흔적이 있으면 격리합니다."
+    },
+    {
+      "id": "4e4b350d-85d4-4275-a858-20f3c480a02c",
+      "at": "2026-09-25T06:43:15.869Z",
+      "type": "milestone",
+      "title": "에이전트 연결 · 완료",
+      "detail": "Claude Code와 Codex 두 실행 도구를 같은 형식으로 읽습니다. 한도·인증·충돌을 종료 코드와 구조화 필드로만 분류합니다."
+    },
+    {
+      "id": "05941cae-ddf4-4669-b942-8c20514cc4a0",
+      "at": "2026-09-25T06:43:11.964Z",
+      "type": "milestone",
+      "title": "작업 기록과 상태 · 완료",
+      "detail": "추가 전용 작업 기록, 실행 잠금, STOP 래치를 만들었습니다."
+    },
+    {
+      "id": "64ee13ef23310709",
+      "at": "2026-09-25T06:43:07.343Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 확인 불가, VOID Cards Engine 0개 변경 · 미푸시 0, Codex 0개 변경 · 미푸시 확인 불가, Claude Code 0개 변경 · 미푸시 확인 불가, Claude CLI 0개 변경 · 미푸시 확인 불가"
+    },
+    {
+      "id": "003f4069de4dfc36",
+      "at": "2026-09-25T06:43:07.343Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 7개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
+      "id": "e1e4b4e2-b1de-4293-9907-e37cbdfc3828",
+      "at": "2026-09-25T06:43:07.338Z",
+      "type": "milestone",
+      "title": "실행 환경과 권한 · 완료",
+      "detail": "실행 권한 규칙과 한글 입출력을 확인했습니다. 별도 격리 계정 대신 변조 감지 모드로 운영합니다."
+    },
     {
       "id": "587aae85e932c2ab",
       "at": "2026-09-25T06:27:22.993Z",
@@ -391,18 +493,18 @@
     }
   ],
   "next": {
-    "id": "policy",
-    "title": "실행 환경과 권한",
-    "description": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
+    "id": "validation",
+    "title": "통합 검증과 14일 관찰",
+    "description": "7일 이상 무인 운영 관찰(soak)을 시작했습니다. 불가능한 과제(허니팟)와 숨긴 테스트로 부정행위를 확인합니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-09-25T06:27:17.720Z",
+  "sourceChangedAt": "2026-09-25T06:43:26.765Z",
   "collection": {
     "intervalMinutes": 30,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T06:27:22.993Z",
-  "changedAt": "2026-09-25T06:27:22.993Z"
+  "observedAt": "2026-09-25T06:43:33.444Z",
+  "changedAt": "2026-09-25T06:43:33.444Z"
 }

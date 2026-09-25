@@ -33,13 +33,13 @@
       "label": "VOID Cards Engine",
       "available": true,
       "branch": "main",
-      "changedFiles": 10,
+      "changedFiles": 16,
       "staged": 0,
-      "unstaged": 5,
-      "modified": 5,
+      "unstaged": 6,
+      "modified": 6,
       "added": 0,
       "deleted": 0,
-      "untracked": 5,
+      "untracked": 10,
       "ahead": 0,
       "behind": 0
     },
@@ -244,6 +244,20 @@
   ],
   "activity": [
     {
+      "id": "344a9e4e37b5d37b",
+      "at": "2026-09-25T03:03:38.697Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 확인 불가, VOID Cards Engine 16개 변경 · 미푸시 0, VOID Cards Website 0개 변경 · 미푸시 13, Codex 0개 변경 · 미푸시 0, Claude Code 0개 변경 · 미푸시 0, Claude CLI 0개 변경 · 미푸시 0"
+    },
+    {
+      "id": "a6ede1cc1df5e7b8",
+      "at": "2026-09-25T03:03:38.697Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "1bb860efb7fbb0e6",
       "at": "2026-09-25T02:33:39.318Z",
       "type": "workspace",
@@ -355,13 +369,13 @@
     "description": "첫 구현 단계입니다. 실행 환경 검증부터 시작합니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-09-25T02:03:05.040Z",
+  "sourceChangedAt": "2026-09-25T02:40:58.853Z",
   "collection": {
     "intervalMinutes": 30,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T02:33:39.318Z",
-  "changedAt": "2026-09-25T02:33:39.318Z"
+  "observedAt": "2026-09-25T03:03:38.697Z",
+  "changedAt": "2026-09-25T03:03:38.697Z"
 }

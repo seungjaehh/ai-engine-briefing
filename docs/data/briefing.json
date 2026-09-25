@@ -247,6 +247,13 @@
   ],
   "activity": [
     {
+      "id": "b0cfd9643f500f7b",
+      "at": "2026-09-25T08:27:21.646Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "9686855646638e1e",
       "at": "2026-09-25T07:57:21.645Z",
       "type": "source",
@@ -519,13 +526,13 @@
     "description": "7일 이상 무인 운영 관찰(soak)을 시작했습니다. 불가능한 과제(허니팟)와 숨긴 테스트로 부정행위를 확인합니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-09-25T07:39:02.722Z",
+  "sourceChangedAt": "2026-09-25T08:12:47.323Z",
   "collection": {
     "intervalMinutes": 30,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T07:57:21.645Z",
-  "changedAt": "2026-09-25T07:57:21.645Z"
+  "observedAt": "2026-09-25T08:27:21.646Z",
+  "changedAt": "2026-09-25T08:27:21.646Z"
 }

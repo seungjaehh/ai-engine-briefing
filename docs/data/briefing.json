@@ -16,17 +16,7 @@
     {
       "id": "ai-core",
       "label": "AI Core Engine",
-      "available": true,
-      "branch": "main",
-      "changedFiles": 0,
-      "staged": 0,
-      "unstaged": 0,
-      "modified": 0,
-      "added": 0,
-      "deleted": 0,
-      "untracked": 0,
-      "ahead": null,
-      "behind": null
+      "available": false
     },
     {
       "id": "void-cards-engine",
@@ -246,6 +236,13 @@
     }
   ],
   "activity": [
+    {
+      "id": "af39a64c8288a01d",
+      "at": "2026-09-26T03:28:17.994Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 저장소 확인 불가, VOID Cards Engine 0개 변경 · 미푸시 0, Codex 0개 변경 · 미푸시 확인 불가, Claude Code 0개 변경 · 미푸시 확인 불가, Claude CLI 0개 변경 · 미푸시 확인 불가"
+    },
     {
       "id": "96676dc910e61b87",
       "at": "2026-09-25T15:27:23.237Z",
@@ -561,6 +558,6 @@
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-25T21:27:25.173Z",
-  "changedAt": "2026-09-25T15:27:23.237Z"
+  "observedAt": "2026-09-26T03:28:17.994Z",
+  "changedAt": "2026-09-26T03:28:17.994Z"
 }

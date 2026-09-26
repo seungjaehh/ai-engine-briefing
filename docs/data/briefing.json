@@ -16,7 +16,17 @@
     {
       "id": "ai-core",
       "label": "AI Core Engine",
-      "available": false
+      "available": true,
+      "branch": "main",
+      "changedFiles": 0,
+      "staged": 0,
+      "unstaged": 0,
+      "modified": 0,
+      "added": 0,
+      "deleted": 0,
+      "untracked": 0,
+      "ahead": 0,
+      "behind": 0
     },
     {
       "id": "void-cards-engine",
@@ -236,6 +246,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "90f232bb64f38a2e",
+      "at": "2026-09-26T04:29:03.401Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 0, VOID Cards Engine 0개 변경 · 미푸시 0, Codex 0개 변경 · 미푸시 확인 불가, Claude Code 0개 변경 · 미푸시 확인 불가, Claude CLI 0개 변경 · 미푸시 확인 불가"
+    },
+    {
+      "id": "ec8f9e225b247b84",
+      "at": "2026-09-26T04:10:24.877Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 0, VOID Cards Engine 0개 변경 · 미푸시 0, Codex 0개 변경 · 미푸시 확인 불가, Claude Code 0개 변경 · 미푸시 확인 불가, Claude CLI 저장소 확인 불가"
+    },
     {
       "id": "af39a64c8288a01d",
       "at": "2026-09-26T03:28:17.994Z",
@@ -558,6 +582,6 @@
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-09-26T03:28:17.994Z",
-  "changedAt": "2026-09-26T03:28:17.994Z"
+  "observedAt": "2026-09-26T04:29:03.401Z",
+  "changedAt": "2026-09-26T04:29:03.401Z"
 }

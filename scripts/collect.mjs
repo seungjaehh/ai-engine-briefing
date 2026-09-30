@@ -15,7 +15,7 @@ const catalog = [
   ['10-design-oracle-first.md', '검증 중심 설계안'], ['10-design-product-outcome.md', '제품 결과 중심 설계안'],
   ['11-merged-architecture.md', '통합 아키텍처 설계안']
 ];
-const ignored = new Set(['.git', '.local', '.env', 'node_modules', 'scratch', 'dist', 'build', 'coverage', '.venv', 'vendor', '.cache', 'projects']);
+const ignored = new Set(['.git', '.local', '.env', 'node_modules', 'scratch', 'dist', 'build', 'coverage', '.venv', 'vendor', '.cache', 'projects', '_codex-worktrees', 'var']);
 const codeExt = new Set(['.js', '.mjs', '.cjs', '.ts', '.tsx', '.jsx', '.py', '.ps1', '.go', '.rs', '.cs', '.lua', '.luau']);
 
 export async function readJson(file, fallback) {

@@ -61,17 +61,47 @@
     {
       "id": "void-cards-codex",
       "label": "Codex",
-      "available": false
+      "available": true,
+      "branch": "agent/codex",
+      "changedFiles": 0,
+      "staged": 0,
+      "unstaged": 0,
+      "modified": 0,
+      "added": 0,
+      "deleted": 0,
+      "untracked": 0,
+      "ahead": 0,
+      "behind": 1
     },
     {
       "id": "void-cards-claude-code",
       "label": "Claude Code",
-      "available": false
+      "available": true,
+      "branch": "agent/claude-code",
+      "changedFiles": 0,
+      "staged": 0,
+      "unstaged": 0,
+      "modified": 0,
+      "added": 0,
+      "deleted": 0,
+      "untracked": 0,
+      "ahead": 0,
+      "behind": 1
     },
     {
       "id": "void-cards-claude-cli",
       "label": "Claude CLI",
-      "available": false
+      "available": true,
+      "branch": "agent/claude-cli",
+      "changedFiles": 0,
+      "staged": 0,
+      "unstaged": 0,
+      "modified": 0,
+      "added": 0,
+      "deleted": 0,
+      "untracked": 0,
+      "ahead": 0,
+      "behind": 1
     }
   ],
   "documents": [
@@ -249,6 +279,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "78185f9d0e471449",
+      "at": "2026-10-03T00:52:53.387Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 13개 변경 · 미푸시 확인 불가, VOID Cards Engine 0개 변경 · 미푸시 0, VOID Cards Website 0개 변경 · 미푸시 1, Codex 0개 변경 · 미푸시 0, Claude Code 0개 변경 · 미푸시 0, Claude CLI 0개 변경 · 미푸시 0"
+    },
+    {
+      "id": "b930eb55d973b6e4",
+      "at": "2026-10-03T00:52:53.387Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 3개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "b1d11fb04320f2de",
       "at": "2026-10-03T00:50:47.388Z",
@@ -746,13 +790,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-03T00:48:51.137Z",
+  "sourceChangedAt": "2026-10-03T00:51:16.040Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-03T00:50:47.388Z",
-  "changedAt": "2026-10-03T00:50:47.388Z"
+  "observedAt": "2026-10-03T00:52:53.387Z",
+  "changedAt": "2026-10-03T00:52:53.387Z"
 }

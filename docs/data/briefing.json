@@ -720,11 +720,11 @@
   "blocked": [],
   "sourceChangedAt": "2026-10-03T00:19:15.833Z",
   "collection": {
-    "intervalMinutes": 30,
+    "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-03T00:24:29.193Z",
-  "changedAt": "2026-10-03T00:24:29.193Z"
+  "observedAt": "2026-10-03T00:25:21.386Z",
+  "changedAt": "2026-10-03T00:25:21.386Z"
 }

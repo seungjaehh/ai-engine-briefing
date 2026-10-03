@@ -220,6 +220,13 @@
   ],
   "activity": [
     {
+      "id": "39a3c69f0e536fce",
+      "at": "2026-10-03T09:05:46.742Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "32f895906eebf167",
       "at": "2026-10-03T08:55:46.712Z",
       "type": "source",
@@ -771,13 +778,6 @@
       "type": "workspace",
       "title": "코드 작업 폴더 상태 변경",
       "detail": "AI Core Engine 0개 변경 · 미푸시 0, VOID Cards Engine 0개 변경 · 미푸시 0, Codex 0개 변경 · 미푸시 확인 불가, Claude Code 0개 변경 · 미푸시 확인 불가, Claude CLI 저장소 확인 불가"
-    },
-    {
-      "id": "af39a64c8288a01d",
-      "at": "2026-09-26T03:28:17.994Z",
-      "type": "workspace",
-      "title": "코드 작업 폴더 상태 변경",
-      "detail": "AI Core Engine 저장소 확인 불가, VOID Cards Engine 0개 변경 · 미푸시 0, Codex 0개 변경 · 미푸시 확인 불가, Claude Code 0개 변경 · 미푸시 확인 불가, Claude CLI 0개 변경 · 미푸시 확인 불가"
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-03T08:54:27.460Z",
+  "sourceChangedAt": "2026-10-03T09:04:27.018Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-03T08:55:46.712Z",
-  "changedAt": "2026-10-03T08:55:46.712Z"
+  "observedAt": "2026-10-03T09:05:46.742Z",
+  "changedAt": "2026-10-03T09:05:46.742Z"
 }

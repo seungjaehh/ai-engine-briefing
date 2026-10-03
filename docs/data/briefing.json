@@ -220,6 +220,13 @@
   ],
   "activity": [
     {
+      "id": "38e48814300c35e2",
+      "at": "2026-10-03T06:15:46.520Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "484b1fc2cccb2557",
       "at": "2026-10-03T06:05:46.423Z",
       "type": "source",
@@ -771,13 +778,6 @@
       "type": "milestone",
       "title": "에이전트 연결 · 완료",
       "detail": "Claude Code와 Codex 두 실행 도구를 같은 형식으로 읽습니다. 한도·인증·충돌을 종료 코드와 구조화 필드로만 분류합니다."
-    },
-    {
-      "id": "05941cae-ddf4-4669-b942-8c20514cc4a0",
-      "at": "2026-09-25T06:43:11.964Z",
-      "type": "milestone",
-      "title": "작업 기록과 상태 · 완료",
-      "detail": "추가 전용 작업 기록, 실행 잠금, STOP 래치를 만들었습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-03T06:04:27.035Z",
+  "sourceChangedAt": "2026-10-03T06:14:27.579Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-03T06:05:46.423Z",
-  "changedAt": "2026-10-03T06:05:46.423Z"
+  "observedAt": "2026-10-03T06:15:46.520Z",
+  "changedAt": "2026-10-03T06:15:46.520Z"
 }

@@ -29,23 +29,8 @@
       "behind": null
     },
     {
-      "id": "void-cards-engine",
-      "label": "VOID Cards Engine",
-      "available": true,
-      "branch": "main",
-      "changedFiles": 0,
-      "staged": 0,
-      "unstaged": 0,
-      "modified": 0,
-      "added": 0,
-      "deleted": 0,
-      "untracked": 0,
-      "ahead": 0,
-      "behind": 0
-    },
-    {
-      "id": "void-cards-site",
-      "label": "VOID Cards Website",
+      "id": "automaton",
+      "label": "Automaton",
       "available": true,
       "branch": "main",
       "changedFiles": 0,
@@ -57,51 +42,6 @@
       "untracked": 0,
       "ahead": 1,
       "behind": 0
-    },
-    {
-      "id": "void-cards-codex",
-      "label": "Codex",
-      "available": true,
-      "branch": "agent/codex",
-      "changedFiles": 0,
-      "staged": 0,
-      "unstaged": 0,
-      "modified": 0,
-      "added": 0,
-      "deleted": 0,
-      "untracked": 0,
-      "ahead": 0,
-      "behind": 1
-    },
-    {
-      "id": "void-cards-claude-code",
-      "label": "Claude Code",
-      "available": true,
-      "branch": "agent/claude-code",
-      "changedFiles": 0,
-      "staged": 0,
-      "unstaged": 0,
-      "modified": 0,
-      "added": 0,
-      "deleted": 0,
-      "untracked": 0,
-      "ahead": 0,
-      "behind": 1
-    },
-    {
-      "id": "void-cards-claude-cli",
-      "label": "Claude CLI",
-      "available": true,
-      "branch": "agent/claude-cli",
-      "changedFiles": 0,
-      "staged": 0,
-      "unstaged": 0,
-      "modified": 0,
-      "added": 0,
-      "deleted": 0,
-      "untracked": 0,
-      "ahead": 0,
-      "behind": 1
     }
   ],
   "documents": [
@@ -279,6 +219,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "28c41eb37572c982",
+      "at": "2026-10-03T00:55:02.181Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 13개 변경 · 미푸시 확인 불가, Automaton 0개 변경 · 미푸시 1"
+    },
+    {
+      "id": "82a4b5fbc3e34544",
+      "at": "2026-10-03T00:55:02.181Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "78185f9d0e471449",
       "at": "2026-10-03T00:52:53.387Z",
@@ -790,13 +744,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-03T00:51:16.040Z",
+  "sourceChangedAt": "2026-10-03T00:53:11.433Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-03T00:52:53.387Z",
-  "changedAt": "2026-10-03T00:52:53.387Z"
+  "observedAt": "2026-10-03T00:55:02.181Z",
+  "changedAt": "2026-10-03T00:55:02.181Z"
 }

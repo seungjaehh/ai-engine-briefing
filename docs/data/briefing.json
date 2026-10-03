@@ -220,6 +220,13 @@
   ],
   "activity": [
     {
+      "id": "affabc2f051b1097",
+      "at": "2026-10-03T10:15:46.864Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "fce0fc0d0fe963b4",
       "at": "2026-10-03T10:05:46.852Z",
       "type": "source",
@@ -771,13 +778,6 @@
       "type": "note",
       "title": "클라이언트 앱 v0.1.0 공개",
       "detail": "엔진 상태, 결정 대기열, 사건 기록, 로그, soak, 도구(백업·시스템 진단)를 한 앱에서 봅니다."
-    },
-    {
-      "id": "61351c46-7b75-40b3-a8fa-524d77183ed0",
-      "at": "2026-09-30T00:51:13.561Z",
-      "type": "note",
-      "title": "구조도 노트북 기준으로 개편",
-      "detail": "단일 노트북 운영을 전제로 14개 섹션 구조도를 다시 정리했습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-03T10:04:27.104Z",
+  "sourceChangedAt": "2026-10-03T10:14:27.555Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-03T10:05:46.852Z",
-  "changedAt": "2026-10-03T10:05:46.852Z"
+  "observedAt": "2026-10-03T10:15:46.864Z",
+  "changedAt": "2026-10-03T10:15:46.864Z"
 }

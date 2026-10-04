@@ -220,6 +220,13 @@
   ],
   "activity": [
     {
+      "id": "3b03baf73df146b4",
+      "at": "2026-10-04T23:40:47.381Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "269bad291873e9bd",
       "at": "2026-10-04T23:30:47.367Z",
       "type": "source",
@@ -771,13 +778,6 @@
       "type": "source",
       "title": "엔진 작업 자료 변경",
       "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "ad1360b8e5697093",
-      "at": "2026-10-04T10:00:47.379Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-04T23:29:47.831Z",
+  "sourceChangedAt": "2026-10-04T23:39:47.978Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-04T23:30:47.367Z",
-  "changedAt": "2026-10-04T23:30:47.367Z"
+  "observedAt": "2026-10-04T23:40:47.381Z",
+  "changedAt": "2026-10-04T23:40:47.381Z"
 }

@@ -6,7 +6,7 @@
   "summary": "통합 검증과 14일 관찰 단계를 진행 중입니다. 무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다.",
   "stats": {
     "researchDocuments": 17,
-    "implementationFiles": 91,
+    "implementationFiles": 90,
     "testFiles": 24
   },
   "git": {
@@ -18,12 +18,12 @@
       "label": "AI Core Engine",
       "available": true,
       "branch": "main",
-      "changedFiles": 21,
+      "changedFiles": 27,
       "staged": 0,
-      "unstaged": 11,
-      "modified": 11,
+      "unstaged": 17,
+      "modified": 16,
       "added": 0,
-      "deleted": 0,
+      "deleted": 1,
       "untracked": 10,
       "ahead": null,
       "behind": null
@@ -219,6 +219,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "d81e4bfe86950a21",
+      "at": "2026-10-04T05:20:46.871Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 27개 변경 · 미푸시 확인 불가, Automaton 0개 변경 · 미푸시 1"
+    },
+    {
+      "id": "71d39f2505031907",
+      "at": "2026-10-04T05:20:46.871Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 17개 변경, 1개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "5be6ef1d8c289e75",
       "at": "2026-10-04T05:15:46.848Z",
@@ -764,20 +778,6 @@
       "type": "source",
       "title": "엔진 작업 자료 변경",
       "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "10053d7c2f53beb4",
-      "at": "2026-10-03T16:45:46.517Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "e011641526f56756",
-      "at": "2026-10-03T16:35:46.502Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-04T05:14:28.585Z",
+  "sourceChangedAt": "2026-10-04T05:19:46.449Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-04T05:15:46.848Z",
-  "changedAt": "2026-10-04T05:15:46.848Z"
+  "observedAt": "2026-10-04T05:20:46.871Z",
+  "changedAt": "2026-10-04T05:20:46.871Z"
 }

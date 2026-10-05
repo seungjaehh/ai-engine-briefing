@@ -6,8 +6,8 @@
   "summary": "통합 검증과 14일 관찰 단계를 진행 중입니다. 무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다.",
   "stats": {
     "researchDocuments": 17,
-    "implementationFiles": 90,
-    "testFiles": 24
+    "implementationFiles": 91,
+    "testFiles": 25
   },
   "git": {
     "available": false
@@ -18,13 +18,13 @@
       "label": "AI Core Engine",
       "available": true,
       "branch": "main",
-      "changedFiles": 27,
+      "changedFiles": 28,
       "staged": 0,
       "unstaged": 17,
       "modified": 16,
       "added": 0,
       "deleted": 1,
-      "untracked": 10,
+      "untracked": 11,
       "ahead": null,
       "behind": null
     },
@@ -40,7 +40,7 @@
       "added": 0,
       "deleted": 0,
       "untracked": 0,
-      "ahead": 1,
+      "ahead": 0,
       "behind": 0
     }
   ],
@@ -219,6 +219,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "5685410161343984",
+      "at": "2026-10-05T01:10:47.611Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 28개 변경 · 미푸시 확인 불가, Automaton 0개 변경 · 미푸시 0"
+    },
+    {
+      "id": "a4ea987a7438e960",
+      "at": "2026-10-05T01:10:47.611Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 5개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "77b3309c491f4c44",
       "at": "2026-10-05T01:00:46.669Z",
@@ -764,20 +778,6 @@
       "type": "source",
       "title": "엔진 작업 자료 변경",
       "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "bb01e18ad1bb2a27",
-      "at": "2026-10-04T11:40:47.035Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "a1165c9260eb3eb2",
-      "at": "2026-10-04T11:30:46.959Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-05T00:59:48.408Z",
+  "sourceChangedAt": "2026-10-05T01:09:49.268Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-05T01:00:46.669Z",
-  "changedAt": "2026-10-05T01:00:46.669Z"
+  "observedAt": "2026-10-05T01:10:47.611Z",
+  "changedAt": "2026-10-05T01:10:47.611Z"
 }

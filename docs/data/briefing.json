@@ -6,7 +6,7 @@
   "summary": "통합 검증과 14일 관찰 단계를 진행 중입니다. 무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다.",
   "stats": {
     "researchDocuments": 17,
-    "implementationFiles": 96,
+    "implementationFiles": 97,
     "testFiles": 25
   },
   "git": {
@@ -219,6 +219,13 @@
     }
   ],
   "activity": [
+    {
+      "id": "4754b5216a604186",
+      "at": "2026-10-05T02:50:46.975Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 4개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "905b8a2588c90dae",
       "at": "2026-10-05T02:40:46.872Z",
@@ -771,13 +778,6 @@
       "type": "source",
       "title": "엔진 작업 자료 변경",
       "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "605b9ab35f5af791",
-      "at": "2026-10-04T14:50:47.981Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-05T02:39:48.260Z",
+  "sourceChangedAt": "2026-10-05T02:49:48.575Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-05T02:40:46.872Z",
-  "changedAt": "2026-10-05T02:40:46.872Z"
+  "observedAt": "2026-10-05T02:50:46.975Z",
+  "changedAt": "2026-10-05T02:50:46.975Z"
 }

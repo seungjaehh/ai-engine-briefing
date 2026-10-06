@@ -33,13 +33,13 @@
       "label": "Automaton",
       "available": true,
       "branch": "main",
-      "changedFiles": 0,
+      "changedFiles": 1,
       "staged": 0,
       "unstaged": 0,
       "modified": 0,
       "added": 0,
       "deleted": 0,
-      "untracked": 0,
+      "untracked": 1,
       "ahead": 2,
       "behind": 0
     }
@@ -219,6 +219,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "86fd4481b58bad4b",
+      "at": "2026-10-06T14:55:48.101Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 28개 변경 · 미푸시 확인 불가, Automaton 1개 변경 · 미푸시 2"
+    },
+    {
+      "id": "29ae95d745b5d5eb",
+      "at": "2026-10-06T14:55:48.101Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "8ddc70f1a7d361c6",
       "at": "2026-10-06T14:46:55.215Z",
@@ -764,20 +778,6 @@
       "type": "source",
       "title": "엔진 작업 자료 변경",
       "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "627c02bf33656662",
-      "at": "2026-10-04T16:20:47.033Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "777a7a4159b295a5",
-      "at": "2026-10-04T16:10:46.708Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-06T14:42:16.599Z",
+  "sourceChangedAt": "2026-10-06T14:51:30.630Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-06T14:46:55.215Z",
-  "changedAt": "2026-10-06T14:46:55.215Z"
+  "observedAt": "2026-10-06T14:55:48.101Z",
+  "changedAt": "2026-10-06T14:55:48.101Z"
 }

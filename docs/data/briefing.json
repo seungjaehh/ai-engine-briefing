@@ -40,7 +40,7 @@
       "added": 0,
       "deleted": 0,
       "untracked": 0,
-      "ahead": 0,
+      "ahead": 1,
       "behind": 0
     }
   ],
@@ -219,6 +219,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "fe7bd7125e9308d8",
+      "at": "2026-10-07T14:10:46.867Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 28개 변경 · 미푸시 확인 불가, Automaton 0개 변경 · 미푸시 1"
+    },
+    {
+      "id": "c0ead8cf4d33a32d",
+      "at": "2026-10-07T14:10:46.867Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "3079cd4905d30090",
       "at": "2026-10-07T14:05:47.328Z",
@@ -764,20 +778,6 @@
       "type": "source",
       "title": "엔진 작업 자료 변경",
       "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "bbf491f00da83030",
-      "at": "2026-10-04T20:30:47.196Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "1c01773f051f1979",
-      "at": "2026-10-04T20:20:47.239Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-07T14:01:31.170Z",
+  "sourceChangedAt": "2026-10-07T14:06:55.326Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-07T14:05:47.328Z",
-  "changedAt": "2026-10-07T14:05:47.328Z"
+  "observedAt": "2026-10-07T14:10:46.867Z",
+  "changedAt": "2026-10-07T14:10:46.867Z"
 }

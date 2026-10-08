@@ -220,6 +220,13 @@
   ],
   "activity": [
     {
+      "id": "d04f6d05f1642b16",
+      "at": "2026-10-08T05:15:46.671Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
+    {
       "id": "9e5a39034a15aac2",
       "at": "2026-10-08T05:10:46.696Z",
       "type": "workspace",
@@ -771,13 +778,6 @@
       "type": "workspace",
       "title": "코드 작업 폴더 상태 변경",
       "detail": "AI Core Engine 28개 변경 · 미푸시 확인 불가, Automaton 0개 변경 · 미푸시 1"
-    },
-    {
-      "id": "a83aa00495d2e6d1",
-      "at": "2026-10-06T15:35:47.251Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 2개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-08T05:09:29.036Z",
+  "sourceChangedAt": "2026-10-08T05:12:15.909Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-08T05:10:46.696Z",
-  "changedAt": "2026-10-08T05:10:46.696Z"
+  "observedAt": "2026-10-08T05:15:46.671Z",
+  "changedAt": "2026-10-08T05:15:46.671Z"
 }

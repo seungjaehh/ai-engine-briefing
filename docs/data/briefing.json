@@ -33,13 +33,13 @@
       "label": "Automaton",
       "available": true,
       "branch": "main",
-      "changedFiles": 1,
+      "changedFiles": 0,
       "staged": 0,
       "unstaged": 0,
       "modified": 0,
       "added": 0,
       "deleted": 0,
-      "untracked": 1,
+      "untracked": 0,
       "ahead": 0,
       "behind": 0
     }
@@ -219,6 +219,20 @@
     }
   ],
   "activity": [
+    {
+      "id": "57098d6a2e5114e8",
+      "at": "2026-10-08T13:55:47.488Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 확인 불가, Automaton 0개 변경 · 미푸시 0"
+    },
+    {
+      "id": "0d16a34303b32a71",
+      "at": "2026-10-08T13:55:47.488Z",
+      "type": "source",
+      "title": "엔진 작업 자료 변경",
+      "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
+    },
     {
       "id": "22d16f8ed2f6aab9",
       "at": "2026-10-08T13:25:47.885Z",
@@ -764,20 +778,6 @@
       "type": "workspace",
       "title": "코드 작업 폴더 상태 변경",
       "detail": "AI Core Engine 28개 변경 · 미푸시 확인 불가, Automaton 0개 변경 · 미푸시 0"
-    },
-    {
-      "id": "7bc57d2b3397e0ba",
-      "at": "2026-10-07T14:05:47.328Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 2개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "a731ca96d1ba01c3",
-      "at": "2026-10-07T14:00:47.713Z",
-      "type": "workspace",
-      "title": "코드 작업 폴더 상태 변경",
-      "detail": "AI Core Engine 28개 변경 · 미푸시 확인 불가, Automaton 41개 변경 · 미푸시 0"
     }
   ],
   "next": {
@@ -786,13 +786,13 @@
     "description": "무인 운영 관찰(soak) 5.5일째입니다. 게이트 판정 33회, 승격 16회이며 알려진 오탐 승격은 0회입니다. 7일 경과와 사용량 한도 리셋 1회가 남았습니다."
   },
   "blocked": [],
-  "sourceChangedAt": "2026-10-08T13:24:20.117Z",
+  "sourceChangedAt": "2026-10-08T13:54:20.053Z",
   "collection": {
     "intervalMinutes": 5,
     "heartbeatHours": 6,
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-08T13:25:47.885Z",
-  "changedAt": "2026-10-08T13:25:47.885Z"
+  "observedAt": "2026-10-08T13:55:47.488Z",
+  "changedAt": "2026-10-08T13:55:47.488Z"
 }

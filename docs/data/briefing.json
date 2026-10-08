@@ -18,13 +18,13 @@
       "label": "AI Core Engine",
       "available": true,
       "branch": "main",
-      "changedFiles": 30,
+      "changedFiles": 0,
       "staged": 0,
-      "unstaged": 19,
-      "modified": 18,
+      "unstaged": 0,
+      "modified": 0,
       "added": 0,
-      "deleted": 1,
-      "untracked": 11,
+      "deleted": 0,
+      "untracked": 0,
       "ahead": null,
       "behind": null
     },
@@ -219,6 +219,13 @@
     }
   ],
   "activity": [
+    {
+      "id": "cc56d4298b47e5e4",
+      "at": "2026-10-08T07:05:46.864Z",
+      "type": "workspace",
+      "title": "코드 작업 폴더 상태 변경",
+      "detail": "AI Core Engine 0개 변경 · 미푸시 확인 불가, Automaton 1개 변경 · 미푸시 0"
+    },
     {
       "id": "d64a32745c9582b0",
       "at": "2026-10-08T06:55:47.024Z",
@@ -771,13 +778,6 @@
       "type": "source",
       "title": "엔진 작업 자료 변경",
       "detail": "수집 대상 1개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
-    },
-    {
-      "id": "942b6427c9f011c4",
-      "at": "2026-10-07T13:25:47.741Z",
-      "type": "source",
-      "title": "엔진 작업 자료 변경",
-      "detail": "수집 대상 2개 변경, 0개 삭제를 확인했습니다. 원문 내용은 게시하지 않습니다."
     }
   ],
   "next": {
@@ -793,6 +793,6 @@
     "sourceAvailable": true
   },
   "repository": "seungjaehh/ai-engine-briefing",
-  "observedAt": "2026-10-08T06:55:47.024Z",
-  "changedAt": "2026-10-08T06:55:47.024Z"
+  "observedAt": "2026-10-08T07:05:46.864Z",
+  "changedAt": "2026-10-08T07:05:46.864Z"
 }
